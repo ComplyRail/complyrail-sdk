@@ -1,29 +1,4 @@
-export class ComplyRailClient {
-  contractId: string
-  rpcUrl: string
-  networkPassphrase: string
-
-  constructor(config: {
-    contractId: string
-    rpcUrl: string
-    networkPassphrase: string
-  }) {
-    this.contractId = config.contractId
-    this.rpcUrl = config.rpcUrl
-    this.networkPassphrase = config.networkPassphrase
-  }
-
-  async registerVasp(): Promise<void> {
-    console.log('registerVasp not yet implemented')
-  }
-
-  async submitPayment(): Promise<void> {
-    console.log('submitPayment not yet implemented')
-  }
-
-  async submitAttestation(): Promise<void> {
-    console.log('submitAttestation not yet implemented')
-  }
-}
-
-export default ComplyRailClient
+export { ComplyRailClient as default, ComplyRailClient } from './client'
+export * from './types'
+export { IVMS101Builder, hashIVMS101Message, validateIVMS101Message, createNaturalPerson, createLegalPerson } from './ivms101'
+export { sha256, sha256Buffer, sha256Bytes32 } from './crypto'

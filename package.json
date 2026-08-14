@@ -15,7 +15,9 @@
   "scripts": {
     "build": "tsup",
     "type-check": "tsc --noEmit",
-    "test": "echo 'No tests yet'",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest --coverage",
     "lint": "eslint src --ext .ts || true"
   },
   "dependencies": {
