@@ -1,0 +1,8 @@
+# Copy to .npmrc and add your npm token to publish to npm registry
+# Get token from: https://www.npmjs.com/settings/YOUR_USERNAME/tokens
+
+# Uncomment and set your token:
+# //registry.npmjs.org/:_authToken=YOUR_NPM_TOKEN
+
+# Or use npm login to authenticate:
+# npm login
